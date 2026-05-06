@@ -2,3 +2,43 @@ html {
   height: 100%;
   width: 100%;
 }
+
+body {
+  font: 14px arial;
+  text-align: center;
+}
+.wrapper {
+  margin: 0 auto; /* center it all on the page*/
+  width: 440px; /* set width of order form */
+  background-color: lightgoldenrodyellow;
+  border: solid 5px darkred;
+  padding: 10px;
+}
+
+h1 {
+  font: 20px arial;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: 25px;
+  color: darkred;
+}
+
+h2 {
+  font: 16px arial;
+  font-weight: bold;
+  color: darkred;
+}
+
+.message {
+  color: darkred;
+  margin-top: 20px;
+  font-weight: bold;
+}
+.field {
+  margin-bottom: 5px;
+  text-align: right;
+}
+.box {
+  display: flex;
+  gap: 20px;
+}

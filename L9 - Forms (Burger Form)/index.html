@@ -1,16 +1,59 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>L9 - Burger Order Form</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-</head>
+  <body>
+    <div class="wrapper">
+      <h1>The Rural Burger Joint</h1>
+      <h2>The Perfect Burger at the Perfect Price</h2>
+      <div class="box">
+        <img src="burgers.gif" height="275px" />
+        <form action="#" class="orderform">
+          <div class="field">Burger: $6.50 | Fries: $3.50 | Drink: $2.50</div>
+          <div class="field">
+            <label for="name">Name: </label>
+            <input type="text" id="name" class="name" />
+          </div>
+          <div class="field">
+            <label for="burgers"># of Burgers: </label>
+            <input type="text" id="burgers" class="burgers" />
+          </div>
+          <div class="field">
+            <label for="fries"># of Fries: </label>
+            <input type="text" id="fries" class="fries" />
+          </div>
+          <div class="field">
+            <label for="drinks"># of Drinks: </label>
+            <input type="text" id="drinks" class="drinks" />
+          </div>
+          <div class="field">
+            <label for="subTotal">Subtotal: </label>
+            <input type="text" id="subTotal" class="subTotal" readonly />
+          </div>
+          <div class="field">
+            <label for="tax">Tax: </label>
+            <input type="text" id="tax" class="tax" readonly />
+          </div>
+          <div class="field">
+            <label for="total">Total: </label>
+            <input type="text" id="total" class="total" readonly />
+          </div>
+          <div class="field">
+            <button type="button" class="makeOrder">Order Total</button>
+          </div>
+          <div class="field">
+            <button type="reset" class="resetOrder">Reset</button>
+          </div>
+          <div class="message">Please place your order!</div>
+        </form>
+      </div>
+    </div>
 
-<body>
-  Hello world
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>

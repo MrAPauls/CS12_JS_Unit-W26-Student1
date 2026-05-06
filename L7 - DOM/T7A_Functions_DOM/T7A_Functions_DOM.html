@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8" />
@@ -6,23 +6,24 @@
 
     <script>
       function myFunction() {
-        alert("I want to change the para1 text to 'Hi there'");
-        alert("I want to add an additional line of text to para2. 'Goodbye'");
+        //      alert("I want to change the para1 text to 'Hi there'");
+        let p1 = document.querySelector(".para1");
+        p1.textContent = "Hi there!";
+        console.log(p1);
+        //        alert("I want to add an additional line of text to para2. 'Goodbye'");
+        document.querySelector(".para2").textContent += " Goodbye";
+        alert(document.querySelector("h1").textContent);
       }
     </script>
   </head>
   <body>
     <h1>Sample Web Page - Functions and DOM</h1>
     <br />
-    <button
-      type="button"
-      name="button"
-      onclick="alert('Need to call Function');"
-    >       Click Me!
+    <button type="button" name="button" onclick="myFunction()">
+      Click Me!
     </button>
 
     <p class="para1">This is para1</p>
     <p class="para2">This is para2</p>
   </body>
 </html>
-
