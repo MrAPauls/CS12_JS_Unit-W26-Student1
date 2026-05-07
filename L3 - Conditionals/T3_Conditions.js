@@ -4,6 +4,14 @@
 
 function t1() {
   /*  */
+  let num = Number(prompt("Enter a number:"));
+  if (num > 0) {
+    console.log("The sign is +");
+  } else if (num < 0) {
+    console.log("The sign is -");
+  } else {
+    console.log("The number is zero.");
+  }
 } //  the sign of a number
 
 function t2() {

@@ -3,8 +3,16 @@
 
 function t1() {
   /*  */
+  for (let i = 0; i < 5; i++) {
+    console.log(i);
+  }
 } //  5 array operations
 
 function t2() {
   /* */
+  let words = "ab,alks,qwe,qew,qwe,asd,asd";
+  let wordArray = words.split(",");
+  wordArray.sort();
+  let joinedWords = wordArray.join(" ");
+  console.log(joinedWords);
 } // Using split and join
